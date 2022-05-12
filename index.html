@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Innovate #1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="menu-btn">
+                    <input type="checkbox" name="menu-option" id="nav-menu">
+                    <label class="menu-btn" for="nav-menu"><img src="./assets/Grupo 502.svg" alt="menu" width="20px" /><p class="desktop">MENÚ</p></label>
+                    <label class="close-menu-btn" for="nav-menu"><img src="./assets/Grupo 501.svg" alt="close" width="20px" /><p class="desktop">MENÚ</p></label>
+                </li>
+                <li class="title desktop">
+                    <a href="index.html">GORRAS</a>
+                </li>
+                <li>
+                    <input type="checkbox" name="nav-option" id="nav-search">
+                    <label for="nav-search"><img src="./assets/search.svg" alt="search" width="20px" /></label>
+                </li>
+                <li class="mobile">
+                    <input type="checkbox" name="cart-option" id="nav-cart">
+                    <label class="cart-btn" for="nav-cart">
+                        <div class="cart-container">
+                            <img class="cart-add" src="./assets/shopping-cart.svg" alt="cart" />
+                            <img class="cart-added" src="./assets/checked.svg" alt="added" />
+                        </div>
+                        <p class="cart-add">AÑADÍR</p>
+                        <p class="cart-added">AÑADIDO</p>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" name="nav-option" id="nav-user">
+                    <label for="nav-user"><img src="./assets/user.svg" alt="user" height="20px" /></label>
+                </li>
+                <li>
+                    <input type="checkbox" name="nav-option" id="nav-bag">
+                    <label for="nav-bag"><img src="./assets/bag.svg" alt="bag" height="20px" /></label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="product">
+            <div class="product-view"> 
+                <button>
+                    <img src="./assets/arrow-left.svg" alt="back" />
+                    <p class="desktop">HOME |</p>
+                    <p class="desktop">CATEGORÍA</p>
+                </button>
+                <button><img src="./assets/heart-outline.svg" alt="fav" /></button>
+                
+                <div class="points">
+                    <div></div>
+                    <div class="point-active"></div>
+                    <div></div>
+                </div>
+
+                <div class="desktop product-view-images">
+                    <div class="img-active"><img src="./assets/img-producto1-1.png" alt="imagen de producto 1" /></div>
+                    <div><img src="./assets/img-producto1-2.png" alt="imagen de producto 2" /></div>
+                    <div><img src="./assets/img-producto1-5.png" alt="imagen de producto 3" /></div>
+                </div>
+
+                <img src="./assets/img-producto1-1.png" alt="product-image" />
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-line"></div>
+                
+                <div class="product-detail-name">
+                    <h2>Gorra de béisbol de algodón</h2>
+                    <h2>$80</h2>
+                </div>
+
+                <section>
+                    <div class="product-detail-color-title">
+                        <p>COLOR:</p>
+                        <p>Negro</p>
+                    </div>
+                    <div class="product-detail-colors">
+                        <button class="color-active color1"></button>
+                        <button class="color2"></button>
+                        <button class="color3"></button>
+                        <button class="color4"></button>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="product-detail-size-title">
+                        <p>TALLE</p>
+                        <div class="product-detail-size-guide">
+                            <img src="./assets/ruler.svg" alt="ruler"/>
+                            <a href="#size-guide">Size guide</a>
+                        </div>
+                    </div>
+
+                    <div class="size-guide" id="size-guide">
+                        <div class="size-guide-header">
+                            <div>
+                                <img src="./assets/ruler.svg" alt="ruler" />
+                                <h3>Size guide</h3>
+                            </div>
+                            <a href="#"><img src="./assets/x.svg" alt="X" /></a>
+                        </div>
+                        <img src="./assets/size.png" alt="size" />
+                        <div class="size-guide-sizes">
+                            <div>S</div>
+                            <div>M</div>
+                            <div class="size-active">L</div>
+                        </div>
+                        <div class="size-guide-specs">
+                            <div class="spec">
+                                <p>1</p>
+                                <p>Altura</p>
+                                <p>12 cm</p>
+                            </div>
+                            <div class="spec">
+                                <p>2</p>
+                                <p>Ancho</p>
+                                <p>18.3 cm</p>
+                            </div>
+                            <div class="spec">
+                                <p>3</p>
+                                <p>Largo</p>
+                                <p>7 cm</p>
+                            </div>
+                            <div class="spec">
+                                <p>4</p>
+                                <p>Perimetro</p>
+                                <p>55-59 cm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-detail-sizes">
+                        <button>S</button>
+                        <button>M</button>
+                        <button class="size-active">L</button>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="product-detail-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident, beatae, cupiditate corrupti culpa labore obcaecati modi deserunt fugit et distinctio temporibus esse quos dolor, autem possimus dolorum quibusdam repudiandae.</p>
+                    </div>
+                </section>
+
+                <div class="desktop">
+                    <input type="checkbox" name="cart" id="cart">
+                    <label class="cart-btn" for="cart">
+                        <div class="cart-container">
+                            <img class="cart-add" src="./assets/shopping-cart.svg" alt="cart" />
+                            <img class="cart-added" src="./assets/checked.svg" alt="added" />
+                        </div>
+                        <p class="cart-add">AÑADÍR AL CARRITO</p>
+                        <p class="cart-added">AÑADIDO CON ÉXITO</p>
+                    </label>
+                </div>
+
+                <section>
+                    <a href="#cyc" class="product-detail-more"> 
+                        <h3>Composición y cuidado</h3>
+                        <img src="./assets/+.svg" alt="+"/>
+                    </a>
+
+                    <div class="cyc" id="cyc">
+                        <div class="cyc-header">
+                            <h3>Composición y cuidado</h3>
+                            <a href="#"><img src="./assets/x.svg" alt="X" /></a>
+                        </div>
+                        <div class="cyc-composicion">
+                            <p>Composición</p>
+                            <br><br>
+                            <p>Tejido principal: 100% algodón orgánico</p>
+                            <p>Entretela: 52% viscosa, 48% algodón orgánico</p>
+                            <br><br>
+                            <p>Hecho en Italia.</p>
+                        </div>
+                        <div class="cyc-cuidado">
+                            <p>Instrucciones de cuidado</p>
+                            <div class="cyc-cuidado-instrucciones">
+                                <div>
+                                    <img src="./assets/Grupo 23.svg" alt="!" />
+                                    <p>Lavar a mano con agua fría</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/Grupo 5.svg" alt="!" />
+                                    <p>No planchar sobre la impresión</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/Grupo 13.svg" alt="!" />
+                                    <p>Planchar a baja temperatura</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/Grupo 19.svg" alt="!" />
+                                    <p>No lavar en seco</p>
+                                </div>
+                            </div>
+                            <p>Tenga en cuenta que puede haber ligeras variaciones en la coloración de nuestros productos entre diferentes composiciones de tejido.</p>
+                            <br><br>
+                            <p>Si desea comprar un juego completo del mismo color, le recomendamos comprar de la misma colección de telas para evitar cualquier discrepancia de color en su juego.</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="product-detail-more"> 
+                        <h3>Ciencias</h3>
+                        <img src="./assets/+.svg" alt="+"/>
+                    </a>
+                    <a href="#" class="product-detail-more"> 
+                        <h3>Entrega y devoluciones</h3>
+                        <img src="./assets/+.svg" alt="+"/>
+                    </a>
+                </section>
+            </div>
+
+            <div class="product-detail-message">
+                <img class="mobile" src="./assets/img-producto1-4.png" alt="imagen-producto" />
+                <img class="desktop" src="./assets/img-producto1-4@2x.png" alt="imagen-producto" />
+                <div class="product-detail-message-container">
+                    <p>ESTA PRENDA ESTÁ CONFECCIONADA CON</p>
+                    <h1>100% ALGODÓN ORGÁNICO</h1>
+                    <div class="line"></div>
+                    <p class="desktop">El algodón tradicional usa el 25% de los insecticidas del mundo. <br> Nuestro algodón orgánico no usa una gota.</p>
+                </div>
+            </div>
+
+            <div class="product-detail-details">
+                <img src="./assets/img-producto1-2.png" alt="imagen-producto" />
+                <div class="details-pin-mobile" id="pin-mobile-1">
+                    <img src="./assets/pin-mobile.svg" alt="+">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Perferendis quidem</span> unde molestiae, quae qui eaque voluptates dicta similique labore quod!</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="details-pin-mobile" id="pin-mobile-2">
+                    <img src="./assets/pin-mobile.svg" alt="+">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Perferendis quidem</span> unde molestiae, quae qui eaque voluptates dicta similique labore quod!</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="details-pin-mobile" id="pin-mobile-3">
+                    <img src="./assets/pin-mobile.svg" alt="+">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Perferendis quidem</span> unde molestiae, quae qui eaque voluptates dicta similique labore quod!</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="details-pin-mobile" id="pin-mobile-4">
+                    <img src="./assets/pin-mobile.svg" alt="+">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Perferendis quidem</span> unde molestiae, quae qui eaque voluptates dicta similique labore quod!</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-products">
+            <h2>TAMBIÉN TE PUEDE INTERESAR</h2>
+
+            <div class="more-products-container">
+                <article>
+                    <img class="mobile" src="./assets/img-producto3.png" alt="product">
+                    <img class="desktop" src="./assets/img-producto3@2x.png" alt="product">
+                    <div class="more-products-colors">
+                        <div class="color-active" id="color1"></div>
+                        <div id="color2"></div>
+                        <div class="desktop" id="color7"></div>
+                        <div class="desktop" id="color8"></div>
+                        <button><img src="./assets/arrow-ios-forward-outline.svg" alt="more"></button>
+                    </div>
+                    <p class="description">Pantalón de chándal de pierna ancha</p>
+                    <p class="price">$120</p>
+                </article>
+
+                <article>
+                    <img class="mobile" src="./assets/img-producto4.png" alt="product">
+                    <img class="desktop" src="./assets/img-producto4@2x.png" alt="product">
+                    <div class="more-products-colors">
+                        <div class="color-active" id="color3"></div>
+                        <div id="color4"></div>
+                        <button><img src="./assets/arrow-ios-forward-outline.svg" alt="more"></button>
+                    </div>
+                    <p class="description">Sudadera con capucha y cremallera</p>
+                    <p class="price">$195</p>
+                </article>
+
+                <article class="desktop">
+                    <img src="./assets/img-producto5@2x.png" alt="product">
+                    <p class="description">Térmica cuello alto</p>
+                    <p class="price">$120</p>
+                </article>
+
+                <article class="desktop">
+                    <img src="./assets/img-producto6@2x.png" alt="product">
+                    <div class="more-products-colors">
+                        <div class="color-active" id="color5"></div>
+                        <div id="color6"></div>
+                        <div class="desktop" id="color9"></div>
+                        <div class="desktop" id="color10"></div>
+                        <button><img src="./assets/arrow-ios-forward-outline.svg" alt="more"></button>
+                    </div>
+                    <p class="description">Camiseta ajustada de algodón orgánico</p>
+                    <p class="price">$55</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="help">
+            <div class="help-target"> 
+                <h3>Productos</h3>
+                <button><img src="./assets/arrow-ios-forward-outline.svg" alt="more"/></button>
+                <li><a href="#">Remeras</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Buzos</a></li>
+                <li><a href="#">Camperas</a></li>
+                <li><a href="#">Gorras</a></li>
+                <li><a href="#">Zapatillas</a></li>
+            </div>
+            <div class="help-target"> 
+                <h3>Soporte</h3>
+                <button><img src="./assets/arrow-ios-forward-outline.svg" alt="more"/></button>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Politicas de privacidad</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Políticas de envío</a></li>
+                <li><a href="#">Ventas por mayor</a></li>
+            </div>
+            <div class="help-target"> 
+                <h3>Contacto</h3>
+                <button><img src="./assets/arrow-ios-forward-outline.svg" alt="more"/></button>
+                <li><img src="./assets/bx-phone-call.svg" alt="teléfono" /><a href="#">+00 000 000</a></li>
+                <li><img src="./assets/bx-envelope.svg" alt="email" /><a href="#">hola@ejemplo.com</a></li>
+                <li><img src="./assets/bx-map.svg" alt="dirección" /><a href="#">Calle ejemplo, esq. calle 2. Ciudad de Rosario, Santa Fe, Argentina.</a></li>
+            </div>
+
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>¡Sé el primero en enterarte de nuestras pormociones!</p>
+                <form>
+                    <img src="./assets/envelope-o.svg" alt="email">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit">
+                        <img src="./assets/arrow-right.svg" alt="enviar">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="social-networks">
+            <a href="#"><img src="./assets/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="./assets/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="./assets/youtube-play.svg" alt="Youtube"></a>
+        </div>
+
+        <div class="copyright">
+            <p>©️ 2021 EJEMPLO. TODOS LOS DERECHOS RESERVADOS. DESIGNED & DEVELOPED BY INNOVATE GROUP | SHOPIFY EXPERTS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
